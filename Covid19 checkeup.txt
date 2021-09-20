@@ -1,0 +1,78 @@
+impotr java.util.*;
+
+class Covid19Checkup
+{
+ public static void main(String args[])
+ {
+  int ara[]= new int[10];
+    String name;
+    
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Covid-19 checkup using Java Program");
+   
+    System.out.println("Please Enter your name:");
+    name=sc.nextline();
+    System.out.println("Please Enter your Age:");
+    ara[0]=sc.nextInt();
+    System.out.println("Dear "+name+", Do you have fever?\n Yes =0, N0=1");
+    ara[1]=sc.nextInt();
+    System.out.println("Do you have respiratory distress?\n Yes=0, No=1");
+    ara[2]=sc.nextInt();
+    System.out.println("Do you have cough?\n Yes=0, No=1");
+    ara[3]=sc.nextInt();
+    System.out.println("Do you feel tired?\n Yes=0,No=1");
+    ara[4]=sc.nextInt();
+    System.out.println("Do you vomit or you experience diarrhea?\n Yes=0, No=1");
+    ara[5]=sc.nextInt();
+    
+    if( ara[0]=0 && ara[1]=0 && ara[2]=0 && ara[3]=0 && ara[4]=0 && ara[5]=0)
+    {
+      System.out.println("Dear "+name+" Please isolate yourself, health workers will reach you as soon as possible.\n");
+    }
+    else
+    {
+     System.out.println("Dear "+name", If you feel very sick, please go to the clinic.\n");
+    }
+    if( ara[0]>=0 && ara[0]<=9)
+    {
+     System.out.println("\n In your age facility rate of corona virus is 0.00%");
+    }
+    else if(ara[0]>=10 && ara[0]<=19)
+    {
+     System.out.println("\n In your age facility rate of corona virus is 0.2%");
+    }
+    else if(ara[0]>=20 && ara[0]<=29)
+    {
+     System.out.println("\nIn your age facility rate of corona virus is 0.2%");
+    }
+    else if(ara[0]>=30 && ara[0]<=39)
+    {
+     System.out.println("\n In your age facility rate of corona virus is 0.2%");
+    }
+    else if(ara[0]>=40 && ara[0]<=49)
+    {
+     System.out.println("\n In your age facility rate of corona virus is 0.4%");
+    }
+    else if(ara[0]>=50 && ara[0]<=59)
+    {
+     System.out.println("\n In your age facility rate of corona virus is 1.3%");
+    }
+    else if(ara[0]>=60 && ara[0]<=69)
+    {
+     System.out.println("\n In your age facility rate of corona virus is 3.6%");
+    }
+    else if(ara[0]>=70 && ara[0]<=79)
+    {
+      System.out.println("\n In your age facility rate of corona virus is 8.0%");
+    }
+    else if(ara[0]>=80)
+    {
+      System.out.println("\n In your age facility rate of corona virus is 21.8% or 14.8%");
+    }
+    System.out.println("\n\n\n Important tips to prevent it:\n 1) Stay at home\n 2)Use Mask \n3)Wash your hands regularly \n");
+    System.out.println("Thank You");
+    }
+   }
+    
+    
+    
